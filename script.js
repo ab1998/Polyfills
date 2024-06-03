@@ -576,7 +576,7 @@ console.log(leftRotate(leftArray, 5));
 //Right rotate array by D places
 
 function rotate(nums, k) {
-  k %= n;
+  k %= nums.length;
 
   const rotated = [];
   for (let i = 0; i < nums.length; i++) {
